@@ -2,7 +2,7 @@ import React from 'react'
 import { AiOutlineShoppingCart, AiOutlineSearch } from 'react-icons/ai'
 import { FaRegUser } from 'react-icons/fa'
 
-function Header() {
+function MainHeader() {
     return (
         <div className='main_header mx-10 my-3'>
             <div className="flex justify-between">
@@ -22,12 +22,12 @@ function Header() {
                         </button>
                     </div>
                 </div>
-                <div className="flex gap-4">
+                <div className="flex gap-5">
                         <div className='flex user_profile'>
-                            <div><FaRegUser /></div>
+                            <div className='self-center mx-1'><FaRegUser /></div>
                             <div>My profile</div>
                         </div>
-                        <div className='flex shop_items'>
+                        <div className='flex shop_items self-center'>
                             <AiOutlineShoppingCart />
                         </div>
                         <div>
@@ -35,7 +35,7 @@ function Header() {
                         </div>
                         <div className='flex  search_price'>
                             <div>$0.00</div>
-                            <div><AiOutlineSearch /></div>
+                            <div className='self-center mx-2'><AiOutlineSearch /></div>
                         </div>
                 </div>
             </div>
@@ -45,4 +45,4 @@ function Header() {
         </div>
     )
 }
-export default Header
+export default MainHeader

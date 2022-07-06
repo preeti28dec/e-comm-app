@@ -10,6 +10,10 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
+.container {
+  max-width: 100%;
+}
+
 a {
   color: inherit;
   text-decoration: none;
@@ -19,40 +23,194 @@ a {
   box-sizing: border-box;
 }
 
-
-.main_header{
-  /* display: flex;
-  justify-content: space-between; */
-
-}
-.user_profile{
-
-}
-.shop_items{
-
-}
-.shop_items{
-  
-}
-/* .card_section{
-  background-image: url('../public/Promotion.png');
-  width: 100%;
-  height: 70%;
-} */
-.card{
+.card {
   background-color: rgb(247, 245, 241);
-  width: 280px;
+  width: auto;
   box-shadow: 1rem;
-  /* border: 1px solid gainsboro; */
-}
-.shop_image{
-  /* margin-left: 1rem;
-  width: 250px;
-  height: 200px; */
-}
-.crad_component{
 
-  /* position:relative;
-  margin-left: 19%;
-  bottom:10rem; */
+}
+
+.text_content {
+  position: relative;
+  margin-top: 10rem;
+  left: 10%;
+}
+
+.input_section {
+  width: 26rem;
+}
+
+.header_text {
+  position: relative;
+  margin-left: 8rem;
+  font-size: 20px;
+}
+
+.bd_section {
+  height: 500px;
+  background-image: url(../public/Promotion\ Image.png);
+}
+
+.bg_content {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  margin: auto;
+}
+
+.bg_content_text {
+  position: relative;
+  margin-top: 5rem;
+  left: 5rem;
+  font-size: 65px;
+
+}
+
+
+
+
+.card_section {
+  position: relative;
+  margin-top: -6rem;
+  display: flex;
+  justify-content: center;
+}
+
+.shop_image {
+  width: 300px;
+}
+
+.price_sec_item {
+  position: relative;
+  bottom: 14rem;
+  left: 13px;
+}
+
+.text_third_item {
+  position: relative;
+  bottom: 13rem;
+}
+
+
+
+.main_shoes_conatiner {
+  width: 100%;
+  height: 100%;
+}
+
+
+.image {
+  opacity: 1;
+  display: block;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container2 {
+  position: relative;
+  width: 100%;
+}
+
+.container2:hover .image {
+  opacity: 0.3;
+}
+
+.container2:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  font-size: 50px;
+}
+
+.main_container {}
+
+.left_container {
+  width: 20%;
+}
+
+.right_container {
+  width: 70%;
+}
+
+.text_content1 {
+  position: relative;
+  margin-top: 5rem;
+  left: 10%;
+}
+
+svg.icon_home_page1 {
+  font-size: 30px;
+  color: rgb(14, 130, 226);
+}
+
+svg.icon_home_page {
+  font-size: 30px;
+  color: rgb(178, 171, 171);
+}
+
+svg.icon_shopping {
+  font-size: 25px;
+  color: rgb(35, 150, 244);
+}
+
+.Pagination {
+  display: flex;
+  justify-content: center;
+}
+
+.home_shoes_image {
+  width: 45%;
+  height: 45%;
+}
+
+.footer_first_row{
+  display: flex;
+  text-align: start;
+  margin: 2rem;
+  justify-content: space-around;
+}
+
+
+
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.main_table{
+  width: 650px;
+}
+.card_main_container{
+  /* max-width: 500px; */
 }
