@@ -1,20 +1,28 @@
 import React from 'react'
-import { AiOutlineShoppingCart,AiOutlineMenu  } from 'react-icons/ai'
+import { AiOutlineShoppingCart, AiOutlineMenu } from 'react-icons/ai'
 import { VscHeart } from 'react-icons/vsc'
 import Footer from './components/Footer'
 import MainHeader from './components/Header'
 import Navbar from './components/Navbar'
+import {BsGrid3X3Gap} from 'react-icons/bs'
+
+import Link from 'next/dist/client/link'
 
 function SingleItem() {
     return (
         <div>
             <MainHeader />
             <Navbar />
-            <div className='text-center text-lg my-4'>Home / Deal</div>
+            <div className="flex justify-center text-lg my-4">
+                <a href="#" className="text-sky-400 hover:text-blue-800">Home</a>
+                <span className="text-gray-500 mx-2">/</span>
+                <Link href="/hot-deal"><a href="#" className=" hover:text-blue-800">Hot Deal</a></Link>
+                
+            </div>
             <div className='flex justify-center main_container gap-10 mt-5'>
                 <div className='left_container '>
-                    <div className='hit_deal rounded-lg bg-gray-100'>
-                        <div className='py-4 mx-4'>Hit Deal</div>
+                    <div className=' rounded-lg bg-gray-100'>
+                        <div className='py-4 mx-4 home_leftbar_name'>Hit Deal</div>
                         <div className='py-4 px-4'>
                             <div className='flex justify-between hover:text-blue-400'>
                                 <div>Nike</div>
@@ -43,8 +51,8 @@ function SingleItem() {
                         </div>
                     </div>
 
-                    <div className='price_ rounded-lg bg-gray-100 mt-6'>
-                        <div className='py-4 mx-4'>PRICES</div>
+                    <div className=' rounded-lg bg-gray-100 mt-6'>
+                        <div className='py-4 mx-4 home_leftbar_name'>PRICES</div>
                         <div className='flex justify-between py-4 px-4'>
                             <div>Ranger</div>
                             <div>$13.99 - $25.99</div>
@@ -54,43 +62,43 @@ function SingleItem() {
                         </div>
                     </div>
 
-                    <div className='color_ bg-gray-100  rounded-lg mt-6'>
+                    <div className='home_leftbar_name bg-gray-100  rounded-lg mt-6'>
                         <div className='py-4 mx-4'>COLOR</div>
-                        <span className="flex justify-around items-center px-4 py-2 ">
+                        <span className="flex justify-around items-center py-2 ">
 
-                            <label className="-m-0.5 relative p-0.5 rounded-full flex items-center justify-center cursor-pointer focus:outline-none ring-gray-400">
+                            <label className=" relative flex items-center justify-center  ring-gray-400">
                                 <input type="radio" name="color-choice" value="White" className="sr-only" aria-labelledby="color-choice-0-label" />
                                 <span aria-hidden="true" className="h-8 w-8 bg-blue-500 border border-black border-opacity-10 rounded-full"></span>
                             </label>
 
-                            <label className="-m-0.5 relative p-0.5 rounded-full flex items-center justify-center cursor-pointer focus:outline-none ring-gray-400">
+                            <label className=" relative flex items-center justify-center  ring-gray-400">
                                 <input type="radio" name="color-choice" value="White" className="sr-only" aria-labelledby="color-choice-0-label" />
                                 <span aria-hidden="true" className="h-8 w-8 bg-red-300 border border-black border-opacity-10 rounded-full"></span>
                             </label>
 
-                            <label className="-m-0.5 relative p-0.5 rounded-full flex items-center justify-center cursor-pointer focus:outline-none ring-gray-400">
+                            <label className=" relative flex items-center justify-center  ring-gray-400">
                                 <input type="radio" name="color-choice" value="White" className="sr-only" aria-labelledby="color-choice-0-label" />
                                 <span aria-hidden="true" className="h-8 w-8 bg-white border border-black border-opacity-10 rounded-full"></span>
                             </label>
 
-                            <label className="-m-0.5 relative p-0.5 rounded-full flex items-center justify-center cursor-pointer focus:outline-none ring-gray-400">
+                            <label className=" relative flex items-center justify-center  ring-gray-400">
                                 <input type="radio" name="color-choice" value="White" className="sr-only" aria-labelledby="color-choice-0-label" />
                                 <span aria-hidden="true" className="h-8 w-8 bg-yellow-200 border border-black border-opacity-10 rounded-full"></span>
                             </label>
 
-                            <label className="-m-0.5 relative p-0.5 rounded-full flex items-center justify-center cursor-pointer focus:outline-none ring-gray-400">
+                            <label className=" relative flex items-center justify-center  ring-gray-400">
                                 <input type="radio" name="color-choice" value="Gray" className="sr-only" aria-labelledby="color-choice-1-label" />
                                 <span aria-hidden="true" className="h-8 w-8 bg-gray-200 border border-black border-opacity-10 rounded-full"></span>
                             </label>
 
-                            <label className="-m-0.5 relative p-0.5 rounded-full flex items-center justify-center cursor-pointer focus:outline-none ring-gray-900">
+                            <label className=" relative  flex items-center justify-center ring-gray-900">
                                 <input type="radio" name="color-choice" value="Black" className="sr-only" aria-labelledby="color-choice-2-label" />
                                 <span aria-hidden="true" className="h-8 w-8 bg-gray-900 border border-black border-opacity-10 rounded-full"></span>
                             </label>
                         </span>
                     </div>
-                    <div className='brand_ bg-gray-100  rounded-lg mt-6'>
-                        <div className='py-4 mx-4'>BRAND</div>
+                    <div className=' bg-gray-100  rounded-lg mt-6'>
+                        <div className='py-4 mx-4 home_leftbar_name'>BRAND</div>
                         <div className='py-4 px-4 '>
                             <div className='flex justify-between hover:text-blue-400'>
                                 <div>Nike</div>
@@ -110,32 +118,30 @@ function SingleItem() {
                             </div>
                         </div>
                     </div>
-                    <div className='more_ bg-gray-100 rounded-lg text-center mt-6 py-6 hover:text-blue-400'>MORE</div>
+                    <div className='home_leftbar_name bg-gray-100 rounded-lg text-center mt-6 py-6 hover:text-blue-400'>MORE</div>
                 </div>
                 <div className='right_container'>
-                    <div>
-                        <div className='main_shoes'>
-                            <div className='flex justify-between bg-blue-400'>
-                                <div className="text_content1">
-                                    <div className=' text-white text-2xl'>Adidas Men Running <br />Sneakers</div>
-                                    <div className='text-white  font-bold mt-8'>Performance and design. Taken right to the edge.</div>
-                                    <div className='text-white  font-bold mt-3'>SHOP NOW</div>
-                                </div>
-                                <div className='home_shoes_image'>
-                                    <img src='./shoes_image.png' alt='Loding' />
-                                </div>
+                    <div className='main_shoes'>
+                        <div className='flex justify-center bg-sky-400'>
+                            <div className="pt-16">
+                                <div className='text-white home_shoes_text_content'>Adidas Men Running <br />Sneakers</div>
+                                <div className='text-white home_shoes_text_content2 '>Performance and design. Taken right to the edge.</div>
+                                <div className='text-white home_shoes_text_content3 underline'>SHOP NOW</div>
+                            </div>
+                            <div className='home_shoes_image'>
+                                <img src='./shoes_image.png' alt='Loding' />
                             </div>
                         </div>
                     </div>
 
                     <div>
                         <div className='flex justify-between bg-gray-100 rounded my-4 py-4 px-4'>
-                            <div className='flex justify-around items-center gap-4 text-gray-500'>
+                            <div className='flex justify-around items-center gap-4 text-gray-500 short_list_item'>
                                 <div>13 Item</div>
                                 <div>Short By</div>
-                                <div className=" ">
-                                    <select name="Name" className="mt-1 py-2 px-3 border border-gray-300  rounded " >
-                                        <option>Name</option>
+                                <div className="">
+                                    <select name="Name" className="mt-1 py-2 px-6 border border-gray-300  rounded " >
+                                        <option >Name</option>
                                         <option>fgyuyiuy</option>
                                         <option>tgjygujyg</option>
                                         <option>fgyuyiuy</option>
@@ -147,7 +153,7 @@ function SingleItem() {
 
                                 <div className='flex gap-6 items-center'>
                                     <div className=''>Show</div>
-                                    <select name="Name" className="mt-1 py-2 px-3 border border-gray-300  rounded " >
+                                    <select name="Name" className="mt-1 py-2 px-6 border border-gray-300  rounded " >
                                         <option>12</option>
                                         <option>25</option>
                                         <option>34</option>
@@ -160,8 +166,8 @@ function SingleItem() {
 
                             </div>
                             <div className='flex items-center '>
-                                <div><AiOutlineMenu className='icon_home_page1' /></div>
-                                <div><AiOutlineMenu className='icon_home_page' /></div>
+                                <div><BsGrid3X3Gap className='icon_singel_item_page1' /></div>
+                                <div className='mx-4'><AiOutlineMenu className='icon_singel_item_page2' /></div>
                             </div>
                         </div>
                     </div>
@@ -170,7 +176,7 @@ function SingleItem() {
                         <div className='self-center'>
                             <img className='' src='./product_1.png' alt='Loding....' /></div>
                         <div>
-                            <div className='text-lg my-4'>Nike Airmax 270 React</div>
+                            <div className='singel_brand_name my-4'>Nike Airmax 270 React</div>
                             <div className='flex my-4'>
                                 <div className="flex items-center">
                                     <svg className="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
@@ -184,7 +190,7 @@ function SingleItem() {
                             </div>
                             <hr />
                             <div className='flex items-center gap-2 my-4'>
-                                <span className="text-2xl font-bold text-blue-400">
+                                <span className="text-2xl font-bold text-sky-400">
                                     $299,43
                                 </span>
                                 <span className='text-gray-300'>$534,33</span>
@@ -194,7 +200,7 @@ function SingleItem() {
                             <div className='flex my-4 '>
                                 <div className='flex border px-2 py-2 bg-blue-100'>
                                     <AiOutlineShoppingCart className='icon_shopping' />
-                                    <button type='button' className='px-2'>Add To Cart </button>
+                                    <button type='button' className='px-2 text-sky-400'>Add To Cart </button>
                                 </div>
                                 <div className='border mx-6 py-2 bg-blue-100'> <VscHeart className='icon_shopping mx-2' /></div>
                             </div>
@@ -205,7 +211,7 @@ function SingleItem() {
                         <div className='self-center'>
                             <img className='' src='./product_2.png' alt='Loding....' /></div>
                         <div>
-                            <div className='text-lg my-4'>Nike Airmax 270 React</div>
+                            <div className='singel_brand_name'>Nike Airmax 270 React</div>
                             <div className='flex my-4'>
                                 <div className="flex items-center">
                                     <svg className="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
@@ -240,7 +246,7 @@ function SingleItem() {
                         <div className='self-center'>
                             <img className='' src='./product_3.png' alt='Loding....' /></div>
                         <div>
-                            <div className='text-lg my-4'>Nike Airmax 270 React</div>
+                            <div className='singel_brand_name'>Nike Airmax 270 React</div>
                             <div className='flex my-4'>
                                 <div className="flex items-center">
                                     <svg className="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
@@ -274,14 +280,12 @@ function SingleItem() {
 
 
                     <div className=" Pagination my-4 border-gray-200 bg-gray-100">
-                        <a href="#" className="hover:bg-blue-400 hover:text-white px-4 py-2 ">1 </a>
-                        <a href="#" className="hover:bg-blue-400 hover:text-white px-4 py-2 ">2 </a>
-                        <a href="#" className="hover:bg-blue-400 hover:text-white px-4 py-2 ">3 </a>
-                        <a href="#" className="hover:bg-blue-400 hover:text-white px-4 py-2 ">4 </a>
-                        <a href="#" className="hover:bg-blue-400 hover:text-white px-4 py-2 ">5 </a>
-                        <a href="#" className="hover:bg-blue-400 hover:text-white px-4 py-2 ">6 </a>
-                        <a href="#" className="hover:bg-blue-400 hover:text-white px-4 py-2 ">7 </a>
-                        <a href="#" className="hover:bg-blue-400 hover:text-white px-4 py-2 ">8 </a>
+                        <a href="#" className="hover:bg-blue-400 hover:text-white px-7 py-4 ">1 </a>
+                        <a href="#" className="hover:bg-blue-400 hover:text-white px-7 py-4 ">2 </a>
+                        <a href="#" className="hover:bg-blue-400 hover:text-white px-7 py-4 ">3 </a>
+                        <a href="#" className="hover:bg-blue-400 hover:text-white px-7 py-4 ">4 </a>
+                        <a href="#" className="hover:bg-blue-400 hover:text-white px-7 py-4 ">5 </a>
+                        <a href="#" className="hover:bg-blue-400 hover:text-white px-7 py-4 ">6 </a>
                     </div>
 
 

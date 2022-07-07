@@ -18,13 +18,13 @@ function Dashboard() {
       <div>
         <Navbar />
       </div>
-      <div class="bd_section ">
-        <div class="bg_content container">
+      <div className="bd_section ">
+        <div className="bg_content container">
           <div className='font-bold text-white bg_content_text '>Super Flash Sale <br /> 50% Off</div>
         </div>
       </div>
       <Shop_component />
-      <div>
+      <div className=''>
         <Item_section />
       </div>
       <div>

@@ -6,8 +6,21 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Raleway', 'Poppins', sans-serif, ;
+}
+
+.font_size {
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: 0.5px;
+}
+
+.text_size {
+  font-family: 'Raleway';
+  font-size: 30px;
+  line-height: 180%;
+  letter-spacing: 0.5px;
+  color: #40BFFF;
 }
 
 .container {
@@ -30,10 +43,29 @@ a {
 
 }
 
-.text_content {
+.shoes_section_text {
   position: relative;
-  margin-top: 10rem;
-  left: 10%;
+  padding-top: 8rem;
+}
+
+.text_content {
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 82px;
+}
+
+
+.text_content2 {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+
+}
+
+.text_content3 {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 36px;
 }
 
 .input_section {
@@ -67,7 +99,17 @@ a {
 }
 
 
+.card_item_latest_text {
+  font-weight: 600;
+  font-size: 34px;
+  line-height: 51px;
+}
 
+.card_item_Featured_text {
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 51px;
+}
 
 .card_section {
   position: relative;
@@ -78,12 +120,6 @@ a {
 
 .shop_image {
   width: 300px;
-}
-
-.price_sec_item {
-  position: relative;
-  bottom: 14rem;
-  left: 13px;
 }
 
 .text_third_item {
@@ -124,18 +160,18 @@ a {
 }
 
 .container2:hover .image {
-  opacity: 0.3;
+  opacity: 1;
 }
 
 .container2:hover .middle {
   opacity: 1;
 }
 
-.text {
+svg.text {
   font-size: 50px;
+  color:  #0fa0e9;;
 }
 
-.main_container {}
 
 .left_container {
   width: 20%;
@@ -158,12 +194,28 @@ svg.icon_home_page1 {
 
 svg.icon_home_page {
   font-size: 30px;
-  color: rgb(178, 171, 171);
 }
+
+svg.icon_singel_item_page1 {
+  font-size: 30px;
+}
+
+svg.icon_singel_item_page2 {
+  font-size: 30px;
+  color: rgb(14, 130, 226);
+}
+
 
 svg.icon_shopping {
   font-size: 25px;
   color: rgb(35, 150, 244);
+}
+
+.singel_brand_name {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  color: #22262A;
 }
 
 .Pagination {
@@ -176,15 +228,12 @@ svg.icon_shopping {
   height: 45%;
 }
 
-.footer_first_row{
+.footer_first_row {
   display: flex;
   text-align: start;
   margin: 2rem;
   justify-content: space-around;
 }
-
-
-
 
 .dropdown {
   position: relative;
@@ -194,8 +243,12 @@ svg.icon_shopping {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f1f1f1;
+  right: -30rem;
+  top: 2.5rem;
+  background-color: white;
+  border: 1px solid rgb(248, 242, 242);
   z-index: 1;
+  padding: 2rem;
 }
 
 .dropdown-content a {
@@ -204,13 +257,150 @@ svg.icon_shopping {
   text-decoration: none;
   display: block;
 }
+
 .dropdown:hover .dropdown-content {
   display: block;
 }
 
-.main_table{
-  width: 650px;
+.dropdown_text {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 33px;
+  color: #C1C8CE;
+
 }
+
+.dropdown_text_ {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.main_table {
+  width: 1200px;
+}
+
+.price_sec_item {
+  position: relative;
+  bottom: 14rem;
+}
+
+.item_section_text {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 33px;
+
+}
+
+.item_section_barnd_name {
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  color: #223263;
+}
+
+.featured_card_item_price {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: #FF4858;
+}
+
+.featured_brand_name {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 27px;
+}
+
+.star_items {
+  width: 80px;
+}
+
+.search_button {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  color: white;
+}
+
+.footer_text {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.footer_follow_text {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.footer_second_section {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.footer_hr_tag {
+  margin-left: 9rem;
+  margin-right: 9rem;
+}
+
+.home_shoes_text_content {
+  font-weight: 500;
+  font-size: 40px;
+}
+
+.home_shoes_text_content2 {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 36px;
+  padding-top: 1rem;
+}
+
+.home_shoes_text_content3 {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 36px;
+  padding-top: 1.5rem;
+}
+
+.short_list_item {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #22262A;
+}
+
+.home_leftbar_name {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.flex.home_page_crad_.my-4.gap-6>div {
+  max-width: 280px;
+}
+
 .card_main_container{
-  /* max-width: 500px; */
+  max-width: 400px;
+}
+
+
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.loading-spinner {
+  width: 50px;
+  height: 50px;
+  border: 10px solid #f3f3f3; /* Light grey */
+  border-top: 10px solid #383636; /* Black */
+  border-radius: 50%;
+  animation: spinner 1.5s linear infinite;
 }
