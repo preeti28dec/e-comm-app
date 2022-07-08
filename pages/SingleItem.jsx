@@ -4,9 +4,11 @@ import { VscHeart } from 'react-icons/vsc'
 import Footer from './components/Footer'
 import MainHeader from './components/Header'
 import Navbar from './components/Navbar'
-import {BsGrid3X3Gap} from 'react-icons/bs'
+import { BsGrid3X3Gap } from 'react-icons/bs'
 
 import Link from 'next/dist/client/link'
+import LeftSidebar from './LeftSidebar'
+import BigSheos from './BigSheos'
 
 function SingleItem() {
     return (
@@ -17,121 +19,15 @@ function SingleItem() {
                 <a href="#" className="text-sky-400 hover:text-blue-800">Home</a>
                 <span className="text-gray-500 mx-2">/</span>
                 <Link href="/hot-deal"><a href="#" className=" hover:text-blue-800">Hot Deal</a></Link>
-                
+
             </div>
             <div className='flex justify-center main_container gap-10 mt-5'>
                 <div className='left_container '>
-                    <div className=' rounded-lg bg-gray-100'>
-                        <div className='py-4 mx-4 home_leftbar_name'>Hit Deal</div>
-                        <div className='py-4 px-4'>
-                            <div className='flex justify-between hover:text-blue-400'>
-                                <div>Nike</div>
-                                <div>2</div>
-                            </div>
-                            <div className='flex justify-between hover:text-blue-400'>
-                                <div>Aimax</div>
-                                <div>48</div>
-                            </div>
-                            <div className='flex justify-between hover:text-blue-400'>
-                                <div>Nike</div>
-                                <div>2</div>
-                            </div>
-                            <div className='flex justify-between hover:text-blue-400'>
-                                <div>Nike</div>
-                                <div>2</div>
-                            </div>
-                            <div className='flex justify-between hover:text-blue-400'>
-                                <div>Nike</div>
-                                <div>2</div>
-                            </div>
-                            <div className='flex justify-between hover:text-blue-400'>
-                                <div>Nike</div>
-                                <div>2</div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className=' rounded-lg bg-gray-100 mt-6'>
-                        <div className='py-4 mx-4 home_leftbar_name'>PRICES</div>
-                        <div className='flex justify-between py-4 px-4'>
-                            <div>Ranger</div>
-                            <div>$13.99 - $25.99</div>
-                        </div>
-                        <div className='px-4'>
-                            <input type="range" value={70} className='w-full' />
-                        </div>
-                    </div>
-
-                    <div className='home_leftbar_name bg-gray-100  rounded-lg mt-6'>
-                        <div className='py-4 mx-4'>COLOR</div>
-                        <span className="flex justify-around items-center py-2 ">
-
-                            <label className=" relative flex items-center justify-center  ring-gray-400">
-                                <input type="radio" name="color-choice" value="White" className="sr-only" aria-labelledby="color-choice-0-label" />
-                                <span aria-hidden="true" className="h-8 w-8 bg-blue-500 border border-black border-opacity-10 rounded-full"></span>
-                            </label>
-
-                            <label className=" relative flex items-center justify-center  ring-gray-400">
-                                <input type="radio" name="color-choice" value="White" className="sr-only" aria-labelledby="color-choice-0-label" />
-                                <span aria-hidden="true" className="h-8 w-8 bg-red-300 border border-black border-opacity-10 rounded-full"></span>
-                            </label>
-
-                            <label className=" relative flex items-center justify-center  ring-gray-400">
-                                <input type="radio" name="color-choice" value="White" className="sr-only" aria-labelledby="color-choice-0-label" />
-                                <span aria-hidden="true" className="h-8 w-8 bg-white border border-black border-opacity-10 rounded-full"></span>
-                            </label>
-
-                            <label className=" relative flex items-center justify-center  ring-gray-400">
-                                <input type="radio" name="color-choice" value="White" className="sr-only" aria-labelledby="color-choice-0-label" />
-                                <span aria-hidden="true" className="h-8 w-8 bg-yellow-200 border border-black border-opacity-10 rounded-full"></span>
-                            </label>
-
-                            <label className=" relative flex items-center justify-center  ring-gray-400">
-                                <input type="radio" name="color-choice" value="Gray" className="sr-only" aria-labelledby="color-choice-1-label" />
-                                <span aria-hidden="true" className="h-8 w-8 bg-gray-200 border border-black border-opacity-10 rounded-full"></span>
-                            </label>
-
-                            <label className=" relative  flex items-center justify-center ring-gray-900">
-                                <input type="radio" name="color-choice" value="Black" className="sr-only" aria-labelledby="color-choice-2-label" />
-                                <span aria-hidden="true" className="h-8 w-8 bg-gray-900 border border-black border-opacity-10 rounded-full"></span>
-                            </label>
-                        </span>
-                    </div>
-                    <div className=' bg-gray-100  rounded-lg mt-6'>
-                        <div className='py-4 mx-4 home_leftbar_name'>BRAND</div>
-                        <div className='py-4 px-4 '>
-                            <div className='flex justify-between hover:text-blue-400'>
-                                <div>Nike</div>
-                                <div>2</div>
-                            </div>
-                            <div className='flex justify-between hover:text-blue-400'>
-                                <div>Aimax</div>
-                                <div>48</div>
-                            </div>
-                            <div className='flex justify-between hover:text-blue-400'>
-                                <div>Nike</div>
-                                <div>2</div>
-                            </div>
-                            <div className='flex justify-between hover:text-blue-400'>
-                                <div>Nike</div>
-                                <div>2</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className='home_leftbar_name bg-gray-100 rounded-lg text-center mt-6 py-6 hover:text-blue-400'>MORE</div>
+                    <LeftSidebar />
                 </div>
                 <div className='right_container'>
                     <div className='main_shoes'>
-                        <div className='flex justify-center bg-sky-400'>
-                            <div className="pt-16">
-                                <div className='text-white home_shoes_text_content'>Adidas Men Running <br />Sneakers</div>
-                                <div className='text-white home_shoes_text_content2 '>Performance and design. Taken right to the edge.</div>
-                                <div className='text-white home_shoes_text_content3 underline'>SHOP NOW</div>
-                            </div>
-                            <div className='home_shoes_image'>
-                                <img src='./shoes_image.png' alt='Loding' />
-                            </div>
-                        </div>
+                      <BigSheos/>
                     </div>
 
                     <div>
@@ -166,7 +62,14 @@ function SingleItem() {
 
                             </div>
                             <div className='flex items-center '>
-                                <div><BsGrid3X3Gap className='icon_singel_item_page1' /></div>
+                                <Link href="/home">
+                                    <a className="  ">
+                                        <div>
+                                            <BsGrid3X3Gap className='icon_singel_item_page1' />
+                                        </div>
+                                    </a>
+                                </Link>
+
                                 <div className='mx-4'><AiOutlineMenu className='icon_singel_item_page2' /></div>
                             </div>
                         </div>
@@ -208,10 +111,11 @@ function SingleItem() {
                     </div>
                     <hr />
                     <div className='flex my-6'>
+                    
                         <div className='self-center'>
                             <img className='' src='./product_2.png' alt='Loding....' /></div>
                         <div>
-                            <div className='singel_brand_name'>Nike Airmax 270 React</div>
+                            <div className='singel_brand_name my-4'>Nike Airmax 270 React</div>
                             <div className='flex my-4'>
                                 <div className="flex items-center">
                                     <svg className="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
@@ -225,7 +129,7 @@ function SingleItem() {
                             </div>
                             <hr />
                             <div className='flex items-center gap-2 my-4'>
-                                <span className="text-2xl font-bold text-blue-400">
+                                <span className="text-2xl font-bold text-sky-400">
                                     $299,43
                                 </span>
                                 <span className='text-gray-300'>$534,33</span>
@@ -235,7 +139,7 @@ function SingleItem() {
                             <div className='flex my-4 '>
                                 <div className='flex border px-2 py-2 bg-blue-100'>
                                     <AiOutlineShoppingCart className='icon_shopping' />
-                                    <button type='button' className='px-2'>Add To Cart </button>
+                                    <button type='button' className='px-2 text-sky-400'>Add To Cart </button>
                                 </div>
                                 <div className='border mx-6 py-2 bg-blue-100'> <VscHeart className='icon_shopping mx-2' /></div>
                             </div>
@@ -246,7 +150,7 @@ function SingleItem() {
                         <div className='self-center'>
                             <img className='' src='./product_3.png' alt='Loding....' /></div>
                         <div>
-                            <div className='singel_brand_name'>Nike Airmax 270 React</div>
+                            <div className='singel_brand_name my-4'>Nike Airmax 270 React</div>
                             <div className='flex my-4'>
                                 <div className="flex items-center">
                                     <svg className="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
@@ -260,7 +164,7 @@ function SingleItem() {
                             </div>
                             <hr />
                             <div className='flex items-center gap-2 my-4'>
-                                <span className="text-2xl font-bold text-blue-400">
+                                <span className="text-2xl font-bold text-sky-400">
                                     $299,43
                                 </span>
                                 <span className='text-gray-300'>$534,33</span>
@@ -270,7 +174,7 @@ function SingleItem() {
                             <div className='flex my-4 '>
                                 <div className='flex border px-2 py-2 bg-blue-100'>
                                     <AiOutlineShoppingCart className='icon_shopping' />
-                                    <button type='button' className='px-2'>Add To Cart </button>
+                                    <button type='button' className='px-2 text-sky-400'>Add To Cart </button>
                                 </div>
                                 <div className='border mx-6 py-2 bg-blue-100'> <VscHeart className='icon_shopping mx-2' /></div>
                             </div>

@@ -3,26 +3,30 @@ import React from 'react'
 function Footer() {
     return (
         <>
-            <div className='bg-blue-300'>
-                <div className='  footer_first_row'>
+            <div className='bg-blue-300 px-8 py-12'>
+                <div className='footer_first_row '>
                     <div className=''>
                         <div className='items-center flex my-4'>
                             <div> <svg className="fill-current h-8 w-8 mr-2" width="54" height="54" viewBox="0 0 54 54" xmlns="http:www.w3.org/2000/svg"><path d="M13.5 22.1c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05zM0 38.3c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05z" /></svg></div>
                             <div className='footer_text'>E-Comm</div>
                         </div>
-                        <div className=''>Lorem Ipsum is simply dummy text of the<br /> printing and typesetting industry. Lorem <br />Ipsum has been the industry's standard <br />dummy text ever.Since the 1500s, when <br />an unknown printer.</div>
+                        <div className='footer_second_section_last_text'>Lorem Ipsum is simply dummy text of the<br /> printing and typesetting industry. Lorem <br />Ipsum has been the industry's standard <br />dummy text ever.Since the 1500s, when <br />an unknown printer.</div>
                     </div>
+
                     <div className=''> <div className='footer_follow_text my-4'>Follow Us</div>
-                        <div>Since the 1500s, when an unknown<br /> printer took a galley of type and <br />scrambled.</div>
+                        <div className='footer_second_section_last_text'>Since the 1500s, when an unknown<br /> printer took a galley of type and <br />scrambled.</div>
                     </div>
-                    <div className=''> <div className='footer_follow_text my-4'>Contact Us</div>
-                        <p>E-Comm,4578 <br />Marmora Raoad, <br />Glasgow D04 89GR</p>
+
+                    <div className=''>
+                        <div className='footer_follow_text my-4'>Contact Us</div>
+                        <div className='footer_second_section_last_text'>E-Comm,4578 <br />Marmora Raoad, <br />Glasgow D04 89GR</div>
                     </div>
                 </div>
-                <div className=' flex justify-around  px-12 py-12'>
+
+                <div className=' flex justify-around py-10 px-16'>
                     <div className=''>
                         <div className='items-center footer_second_section mb-10 '>Information</div>
-                        <ul>
+                        <div className='footer_second_section_last_text'><ul>
                             <li>
                                 About Us
                             </li>
@@ -36,25 +40,54 @@ function Footer() {
                                 Terms $ Conditions
                             </li>
                         </ul>
+                        </div>
+
 
                     </div>
-                    <div className=''> <div className='footer_second_section mb-10'>Service</div>
-                        <ul>
-                            <li>
-                                About Us
-                            </li>
-                            <li>
-                                Information
-                            </li>
-                            <li>
-                                Privacy Policy
-                            </li>
-                            <li>
-                                Terms $ Conditions
-                            </li>
-                        </ul> </div>
-                    <div className=''> <div className='footer_second_section mb-10'> My Account</div>
-                        <ul>
+
+                    <div className=''>
+                        <div className='footer_second_section mb-10'>Service</div>
+                        <div className='footer_second_section_last_text'>
+                            <ul>
+                                <li>
+                                    About Us
+                                </li>
+                                <li>
+                                    Information
+                                </li>
+                                <li>
+                                    Privacy Policy
+                                </li>
+                                <li>
+                                    Terms $ Conditions
+                                </li>
+                            </ul> </div>
+
+                    </div>
+
+                    <div className=''>
+                        <div className='footer_second_section mb-10'> My Account</div>
+                        <div className='footer_second_section_last_text'>
+                            <ul>
+                                <li>
+                                    About Us
+                                </li>
+                                <li>
+                                    Information
+                                </li>
+                                <li>
+                                    Privacy Policy
+                                </li>
+                                <li>
+                                    Terms $ Conditions
+                                </li>
+                            </ul></div>
+
+                    </div>
+
+                    <div className=''>
+                        <div className='footer_second_section mb-10'> Our Offers</div>
+                        <div className='footer_second_section_last_text'>    <ul>
                             <li>
                                 About Us
                             </li>
@@ -68,22 +101,9 @@ function Footer() {
                                 Terms $ Conditions
                             </li>
                         </ul></div>
-                    <div className=''><div className='footer_second_section mb-10'> Our Offers</div>
-                        <ul>
-                            <li>
-                                About Us
-                            </li>
-                            <li>
-                                Information
-                            </li>
-                            <li>
-                                Privacy Policy
-                            </li>
-                            <li>
-                                Terms $ Conditions
-                            </li>
-                        </ul>
+
                     </div>
+
                 </div>
                 <div className='footer_hr_tag'>
                     <hr className="my-6 border-gray-200 " />

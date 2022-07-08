@@ -2,11 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-html,
-body {
+html {
   padding: 0;
   margin: 0;
-  font-family: 'Raleway', 'Poppins', sans-serif, ;
+  font-family: 'Poppins';
 }
 
 .font_size {
@@ -17,9 +16,11 @@ body {
 
 .text_size {
   font-family: 'Raleway';
+  font-weight: 700;
   font-size: 30px;
   line-height: 180%;
   letter-spacing: 0.5px;
+
   color: #40BFFF;
 }
 
@@ -74,13 +75,31 @@ a {
 
 .header_text {
   position: relative;
-  margin-left: 8rem;
-  font-size: 20px;
+  margin-left: 6rem;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
 }
 
 .bd_section {
   height: 500px;
   background-image: url(../public/Promotion\ Image.png);
+}
+
+.off_text_items {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 150%;
+  letter-spacing: 0.5px;
+  color: #FB7181;
+}
+
+.product_price {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 180%;
+  letter-spacing: 0.5px;
+  color: #40BFFF;
 }
 
 .bg_content {
@@ -98,11 +117,24 @@ a {
 
 }
 
+.card_icon_text {
+  font-weight: 500;
+  font-size: 27px;
+  line-height: 40px;
+  color: #22262A;
+}
 
 .card_item_latest_text {
   font-weight: 600;
   font-size: 34px;
   line-height: 51px;
+}
+
+.latest_text_card {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 33px;
+  color: #22262A;
 }
 
 .card_item_Featured_text {
@@ -124,7 +156,7 @@ a {
 
 .text_third_item {
   position: relative;
-  bottom: 13rem;
+  bottom: 12rem;
 }
 
 
@@ -169,12 +201,12 @@ a {
 
 svg.text {
   font-size: 50px;
-  color:  #0fa0e9;;
+  color: #0fa0e9;
 }
 
 
 .left_container {
-  width: 20%;
+  width: 15%;
 }
 
 .right_container {
@@ -224,8 +256,9 @@ svg.icon_shopping {
 }
 
 .home_shoes_image {
-  width: 45%;
-  height: 45%;
+  width: 40%;
+  position: relative;
+  bottom: 3rem;
 }
 
 .footer_first_row {
@@ -295,6 +328,7 @@ svg.icon_shopping {
 .item_section_barnd_name {
   font-weight: 700;
   font-size: 18px;
+  line-height: 150%;
   letter-spacing: 0.5px;
   color: #223263;
 }
@@ -336,9 +370,11 @@ svg.icon_shopping {
 }
 
 .footer_second_section {
+
   font-weight: 400;
   font-size: 18px;
   line-height: 27px;
+  color: #22262A;
 }
 
 .footer_hr_tag {
@@ -352,17 +388,19 @@ svg.icon_shopping {
 }
 
 .home_shoes_text_content2 {
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 36px;
-  padding-top: 1rem;
+  margin-top: 1rem;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #FFFFFF;
 }
 
 .home_shoes_text_content3 {
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 36px;
-  padding-top: 1.5rem;
+  margin-top: 2rem;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  color: #FFFFFF;
 }
 
 .short_list_item {
@@ -382,7 +420,7 @@ svg.icon_shopping {
   max-width: 280px;
 }
 
-.card_main_container{
+.card_main_container {
   max-width: 400px;
 }
 
@@ -392,15 +430,62 @@ svg.icon_shopping {
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
   }
 }
+
 .loading-spinner {
+  position: relative;
+  left: 35rem;
   width: 50px;
   height: 50px;
-  border: 10px solid #f3f3f3; /* Light grey */
-  border-top: 10px solid #383636; /* Black */
+  border: 10px solid #f3f3f3;
+  border-top: 10px solid #383636;
   border-radius: 50%;
   animation: spinner 1.5s linear infinite;
+}
+
+
+.table_head {
+  font-family: 'Poppins' !important;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 33px;
+  color: #C1C8CE;
+
+}
+
+.table_data {
+  font-family: 'Poppins' !important;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #262626;
+}
+
+.card_item_latest_main_div {
+  position: relative;
+  margin-top: 8rem;
+}
+
+.card_item_Featured_main_div {
+  position: relative;
+  margin-top: 8rem;
+}
+
+.search_bar {
+  position: relative;
+  margin-top: 5rem;
+}
+
+.footer_second_section_last_text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+
+  color: #262626;
 }

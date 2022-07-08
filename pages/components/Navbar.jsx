@@ -11,74 +11,73 @@ function Navbar() {
         </div>
         <ul className="flex flex-wrap items-center  text-sm text-gray-500 ">
           <li>
-            <Link href="/home">
+            <Link href='/home'>
               <div className="dropdown">
-                <a className="dropbtn mr-4 text-sky-400 header_text">Home</a>
-                <div className="dropdown-content">
+                <spna className=" mr-4  header_text dropbtn text-sky-400">HOME
+                  <div className="dropdown-content">
+                    <div className='main_table mb-4'>
+                      <div className='table_head flex justify-between mx-8 mt-4'>
+                        <div className='dropdown_text my-4'>Category</div>
+                        <div className='dropdown_text my-4'>Category</div>
+                        <div className='dropdown_text my-4'>Category</div>
+                      </div>
+                      <div className='table_data flex  mx-3  justify-between'>
+                        <div className=' dropdown_text_ mx-4 my-2'>Coporate</div>
+                        <div className=' dropdown_text_  mx-4 my-2'>Coporate</div>
+                        <div className=' dropdown_text_  mx-4 my-2'>Coporate</div>
+                        <div className=' dropdown_text_  mx-4 my-2'>Coporate</div>
+                        <div className=' dropdown_text_  mx-4 my-2'>Coporate</div>
+                      </div>
+                      <div className='table_data flex  mx-3 justify-between'>
+                        <div className=' dropdown_text_  mx-4 my-2'>Coporate</div>
+                        <div className=' dropdown_text_  mx-4 my-2'>Coporate</div>
+                        <div className=' dropdown_text_  mx-4 my-2'>Coporate</div>
+                        <div className=' dropdown_text_  mx-4 my-2'>Coporate</div>
+                        <div className=' dropdown_text_  mx-4 my-2'>Coporate</div>
+                      </div>
+                      <div className='table_data flex  mx-3  justify-between'>
+                        <div className=' dropdown_text_  mx-4 my-2'>Coporate</div>
+                        <div className=' dropdown_text_  mx-4 my-2'>Coporate</div>
+                        <div className=' dropdown_text_  mx-4 my-2'>Coporate</div>
+                        <div className=' dropdown_text_  mx-4 my-2'>Coporate</div>
+                        <div className=' dropdown_text_  mx-4 my-2'>Coporate</div>
+                      </div>
+                      <div className='table_data flex  mx-3  justify-between'>
+                        <div className=' dropdown_text_  mx-4 my-2'>Coporate</div>
+                        <div className=' dropdown_text_  mx-4 my-2'>Coporate</div>
+                        <div className=' dropdown_text_  mx-4 my-2'>Coporate</div>
+                        <div className=' dropdown_text_  mx-4 my-2'>Coporate</div>
+                        <div className=' dropdown_text_  mx-4 my-2'>Coporate</div>
+                      </div>
+                      <div className='table_data flex mx-3 justify-between'>
+                        <div className=' dropdown_text_  mx-4 my-2'>Coporate</div>
+                        <div className=' dropdown_text_  mx-4 my-2'>Coporate</div>
+                        <div className=' dropdown_text_  mx-4 my-2'>Coporate</div>
+                        <div className=' dropdown_text_  mx-4 my-2'>Coporate</div>
+                        <div className=' dropdown_text_  mx-4 my-2'>Coporate</div>
+                      </div>
 
-                  <div className='main_table mb-4'>
-                    <div className='table_head flex justify-between mx-8 mt-4'>
-                      <div className='dropdown_text my-4'>Category</div>
-                      <div className='dropdown_text my-4'>Category</div>
-                      <div className='dropdown_text my-4'>Category</div>
                     </div>
-                    <div className='table_data flex  mx-3  justify-between'>
-                      <div className=' dropdown_text_ mx-4 my-2'>Coporate</div>
-                      <div className=' dropdown_text_  mx-4 my-2'>Coporate</div>
-                      <div className=' dropdown_text_  mx-4 my-2'>Coporate</div>
-                      <div className=' dropdown_text_  mx-4 my-2'>Coporate</div>
-                      <div className=' dropdown_text_  mx-4 my-2'>Coporate</div>
-                    </div>
-                    <div className='table_data flex  mx-3 justify-between'>
-                      <div className=' dropdown_text_  mx-4 my-2'>Coporate</div>
-                      <div className=' dropdown_text_  mx-4 my-2'>Coporate</div>
-                      <div className=' dropdown_text_  mx-4 my-2'>Coporate</div>
-                      <div className=' dropdown_text_  mx-4 my-2'>Coporate</div>
-                      <div className=' dropdown_text_  mx-4 my-2'>Coporate</div>
-                    </div>
-                    <div className='table_data flex  mx-3  justify-between'>
-                      <div className=' dropdown_text_  mx-4 my-2'>Coporate</div>
-                      <div className=' dropdown_text_  mx-4 my-2'>Coporate</div>
-                      <div className=' dropdown_text_  mx-4 my-2'>Coporate</div>
-                      <div className=' dropdown_text_  mx-4 my-2'>Coporate</div>
-                      <div className=' dropdown_text_  mx-4 my-2'>Coporate</div>
-                    </div>
-                    <div className='table_data flex  mx-3  justify-between'>
-                      <div className=' dropdown_text_  mx-4 my-2'>Coporate</div>
-                      <div className=' dropdown_text_  mx-4 my-2'>Coporate</div>
-                      <div className=' dropdown_text_  mx-4 my-2'>Coporate</div>
-                      <div className=' dropdown_text_  mx-4 my-2'>Coporate</div>
-                      <div className=' dropdown_text_  mx-4 my-2'>Coporate</div>
-                    </div>
-                    <div className='table_data flex mx-3 justify-between'>
-                      <div className=' dropdown_text_  mx-4 my-2'>Coporate</div>
-                      <div className=' dropdown_text_  mx-4 my-2'>Coporate</div>
-                      <div className=' dropdown_text_  mx-4 my-2'>Coporate</div>
-                      <div className=' dropdown_text_  mx-4 my-2'>Coporate</div>
-                      <div className=' dropdown_text_  mx-4 my-2'>Coporate</div>
-                    </div>
-
                   </div>
-                </div>
+                </spna>
               </div>
             </Link>
-
           </li>
           <li>
-            <a href="#" className="mr-4 text-black hover:text-blue-400 header_text   ">BAGS</a>
+            <a href="#" className="mr-4 text-black hover:text-sky-400 header_text   ">BAG</a>
           </li>
           <li>
-            <a href="#" className="mr-4 text-black hover:text-blue-400 header_text  ">SNEAKERS</a>
+            <a href="#" className="mr-4 text-black hover:text-sky-400 header_text  ">SNEAKERS</a>
           </li>
           <li>
-            <a href="#" className="mr-4 text-black hover:text-blue-400 header_text   ">BELT</a>
+            <a href="#" className="mr-4 text-black hover:text-sky-400 header_text   ">BELT</a>
           </li>
           <li>
-            <a href="#" className="mr-4 text-black hover:text-blue-400 header_text   ">CONTACT</a>
+            <a href="#" className="mr-4 text-black hover:text-sky-400 header_text   ">CONTACT</a>
           </li>
         </ul>
       </div>
-    </div>
+    </div >
 
   )
 }
