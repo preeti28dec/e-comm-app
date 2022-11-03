@@ -3,7 +3,7 @@ import React from 'react'
 function Card_Item() {
     return (
         <div className='mx-4 my-14'>
-            <div className='flex justify-around text-center'>
+            <div className='flex-wrap flex justify-around text-center'>
                 <div>
                     <div className='Card_Icon my-6 mx-9' ><img src='./shipping.png' alt='loding' /></div>
                     <div className='text-lg mx-2 my-4 card_icon_text'>FREE SHIPPING</div>
@@ -23,7 +23,7 @@ function Card_Item() {
 
             <div className='card_item_latest_main_div'>
                 <div className='my-14  text-center card_item_latest_text'>LATEST NEWS</div>
-                <div className='flex justify-around'>
+                <div className='flex-wrap flex justify-around'>
                     <div className='flex'>
                         <div className='self-center mx-5'><img src='./Nike_logo.png' alt='loding' /></div>
                         <div>
@@ -55,7 +55,7 @@ function Card_Item() {
 
                 <div className='my-14 text-center card_item_Featured_text'>FEATURED PRODUCTS</div>
 
-                <div className='flex justify-around'>
+                <div className='flex-wrap flex justify-around '>
                     <div className='flex'>
                         <div><img src='./Vector.png' alt='loding' /></div>
                         <div className='mx-4 '>
@@ -111,11 +111,15 @@ function Card_Item() {
                         </div>
                     </div>
                 </div>
-                <div className=' search_bar flex  justify-center '>
+                {/* <div className=' search_bar flex flex-wrap justify-center '>
                     <div className="border border-sky-400">
-                        <input type="input" className="input_section px-4 py-3 text-base font-normal text-gray-700 bg-white" placeholder="Search query..." />
+                        <input type="input" className="input_section px-4 py-3 text-base font-normal text-gray-700 bg-white w-full" placeholder="Search query..." />
                         <button type="button" className=" relative right-0 border-gray-300 px-6 py-3 bg-sky-400 search_button ">Search</button>
                     </div>
+                </div> */}
+                <div className='border border-sky-400 flex items-center sm:mx-20 my-4'>
+                    <input type="text" className='w-full' placeholder='Search query...'/>
+                    <button className='bg-sky-400  py-4 px-8'>Search</button>
                 </div>
 
             </div>

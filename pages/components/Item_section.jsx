@@ -17,7 +17,7 @@ function Item_section() {
         <div>
             <div className='flex  text-3xl mt-8 justify-center font-bold'>BEST SELLER</div>
 
-            <div className='text-center mt-6 item_section_text'>
+            <div className='my-2 item_section_text'>
                 <span className='mx-6 text-blue-400 underline'>All</span>
                 <span className='mx-6 hover:text-blue-500 hover:underline'>Bags</span>
                 <span className='mx-6 hover:text-blue-500 hover:underline'>Sneakers</span>

@@ -111,10 +111,7 @@ a {
 
 .bg_content_text {
   position: relative;
-  margin-top: 5rem;
-  left: 5rem;
-  font-size: 65px;
-
+  
 }
 
 .card_icon_text {
@@ -147,6 +144,7 @@ a {
   position: relative;
   margin-top: -6rem;
   display: flex;
+ flex-wrap: wrap;
   justify-content: center;
 }
 
@@ -263,6 +261,7 @@ svg.icon_shopping {
 
 .footer_first_row {
   display: flex;
+  flex-wrap:wrap ;
   text-align: start;
   margin: 2rem;
   justify-content: space-around;
@@ -319,9 +318,12 @@ svg.icon_shopping {
 }
 
 .item_section_text {
-  font-weight: 400;
-  font-size: 22px;
+  font-size: 20px;
   line-height: 33px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 
 }
 
