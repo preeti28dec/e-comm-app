@@ -56,7 +56,7 @@ const Signup = () => {
         </div>
         <div className="mt-6 ">
           <Link className="text-blue-500 hover:underline ml-6" href="/login">
-            Login page
+           <a> Login page</a>
           </Link>
         </div>
       </div>
