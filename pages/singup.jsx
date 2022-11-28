@@ -1,6 +1,7 @@
 
 import { useRouter } from "next/router";
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Signup = () => {
   const [name, setName] = useState("");
@@ -54,9 +55,9 @@ const Signup = () => {
           </button>
         </div>
         <div className="mt-6 ">
-          <a className="text-blue-500 hover:underline ml-6" href="/login">
+          <Link className="text-blue-500 hover:underline ml-6" href="/login">
             Login page
-          </a>
+          </Link>
         </div>
       </div>
     </>
