@@ -8,19 +8,16 @@ import Footer from './components/Footer'
 import Products from './Products'
 import LeftSidebar from './LeftSidebar'
 import BigSheos from './BigSheos'
-
 function HomePage() {
     return (
         <>
             <MainHeader />
             <Navbar />
-
             <div className="flex justify-center text-lg mb-4 bg-gray-100 py-4">
                 <a href="#" className="text-sky-400 hover:text-sky-400">Home</a>
                 <span className="text-gray-500 mx-2">/</span>
                 <a href="/hot-deal" className=" hover:text-sky-400">Hot Deal</a>
             </div>
-
             <div className='flex justify-center main_container gap-10 mt-5'>
                 <div className='left_container '>
                     <LeftSidebar />
@@ -96,3 +93,4 @@ function HomePage() {
 }
 
 export default HomePage
+

@@ -1,8 +1,14 @@
 import React from 'react'
 import { AiOutlineShoppingCart, AiOutlineSearch } from 'react-icons/ai'
-import { FaRegUser } from 'react-icons/fa'
+import { FaRegUser } from 'react-icons/fa';
+import { useRouter } from "next/router";
+
 
 function MainHeader() {
+    const router = useRouter();
+    function Logout(){
+        router.push('/login')
+    }
     return (
         <div className='main_header mx-10 my-3'>
             <div className="flex justify-between">
@@ -23,25 +29,23 @@ function MainHeader() {
                     </div>
                 </div>
                 <div className="flex flex-wrap gap-5">
-                        <div className='flex user_profile'>
-                            <div className='self-center mx-1'><FaRegUser /></div>
-                            <div>My profile</div>
-                        </div>
-                        <div className='flex shop_items self-center'>
-                            <AiOutlineShoppingCart />
-                        </div>
-                        <div>
-                            Items
-                        </div>
-                        <div className='flex  search_price'>
-                            <div>$0.00</div>
-                            <div className='self-center mx-2'><AiOutlineSearch /></div>
-                        </div>
+                <button onClick={Logout}>Logout</button>
+                    <div className='flex user_profile'>
+                        <div className='self-center mx-1'><FaRegUser /></div>
+                        <div>My profile</div>
+                    </div>
+                    <div className='flex shop_items self-center'>
+                        <AiOutlineShoppingCart />
+                    </div>
+                    <div>
+                        Items
+                    </div>
+                    <div className='flex  search_price'>
+                        <div>$0.00</div>
+                        <div className='self-center mx-2'><AiOutlineSearch /></div>
+                    </div>
                 </div>
             </div>
-
-            
-
         </div>
     )
 }

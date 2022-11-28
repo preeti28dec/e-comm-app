@@ -7,9 +7,6 @@ import MainHeader from '../components/Header';
 
 export default function ProductDetail() {
     const route = useRouter();
-
-    // console.log("ROUTE", route)
-
     return (
         <div>
             <MainHeader />
