@@ -1,7 +1,6 @@
-
+import Link from "next/link";
 import { useRouter } from "next/router";
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
 
 const Signup = () => {
   const [name, setName] = useState("");
@@ -14,12 +13,12 @@ const Signup = () => {
       name: name,
       email: email,
       password: password,
-      token:name+password+email
+      token: name + password + email,
     };
     if (name && email && password === conformPassword) {
       localStorage.setItem("userRegister", JSON.stringify(obj));
-      router.push('/')
-    } 
+      router.push("/");
+    }
   }
 
   return (
@@ -55,8 +54,8 @@ const Signup = () => {
           </button>
         </div>
         <div className="mt-6 ">
-          <Link className="text-blue-500 hover:underline ml-6" to="/login">
-           Login page
+          <Link className="text-blue-500 hover:underline ml-6" href="/login">
+            <a> Login page</a>
           </Link>
         </div>
       </div>
