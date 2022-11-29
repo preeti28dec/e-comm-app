@@ -47,11 +47,7 @@ function Products() {
 
                                         <div className='container2'>
                                             <div className="w-full min-h-80 bg-gray-200 aspect-w-1 aspect-h-1 rounded-md overflow-hidden group-hover:opacity-75 lg:h-80 lg:aspect-none All_card clip-path  image">
-                                                <img
-                                                    src={product.image}
-                                                    alt={product.imageAlt}
-                                                    className="w-full h-full object-cente lg:w-full lg:h-full object-contain bg-white"
-                                                />
+                                                <img msrc={product.image} alt={product.imageAlt} className="w-full h-full object-cente lg:w-full lg:h-full object-contain bg-white"/>
                                                 <div className='flex gap-3 middle'>
                                                     <VscHeart className='text' />
                                                     <AiOutlineShoppingCart className='text' />
