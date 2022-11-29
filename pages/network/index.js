@@ -1,5 +1,5 @@
 const ENDPOINT = "https://fakestoreapi.com";
-export const get = ({ route }) => {
+export  const get = ({ route }) => {
   return fetch(ENDPOINT + route, {
     method: "GET",
     headers: {

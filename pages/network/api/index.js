@@ -1,6 +1,6 @@
 import { get } from "..";
 
-  export const getProductApi = () => {
+  export  const getProductApi = () => {
     return get({
       route: "/products",
     });
@@ -8,7 +8,7 @@ import { get } from "..";
 
 
 
-  export const getProductApiId = (id) => {
+  export  const getProductApiId = (id) => {
     return get({
       route: `/products/${id}`,
     });
