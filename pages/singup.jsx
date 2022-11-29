@@ -25,42 +25,6 @@ const Signup = () => {
 
   return (
     <>
-      {/* <div className="text-center mt-10">
-        <div> Name</div>
-        <input
-          className="border border-slate-300"
-          type="text"
-          onChange={(e) => setName(e.target.value)}
-        />
-        <div> Email</div>
-        <input
-          className="border border-slate-300"
-          type="text"
-          onChange={(e) => setEmail(e.target.value)}
-        />
-        <div> Pssword</div>
-        <input
-          className="border border-slate-300"
-          type="password"
-          onChange={(e) => setPassword(e.target.value)}
-        />
-        <div>Conform Pssword</div>
-        <input
-          className="border border-slate-300"
-          type="password"
-          onChange={(e) => setConformPassword(e.target.value)}
-        />
-        <div className="mt-6">
-          <button className=" button" onClick={onSignUp}>
-            Ragister
-          </button>
-        </div>
-        <div className="mt-6 ">
-          <Link className="text-blue-500 hover:underline ml-6" href="/login">
-            <button> Login page</button>
-          </Link>
-        </div>
-      </div> */}
       <Root className="relative min-h-screen flex ">
   <div className="flex flex-col sm:flex-row items-center md:items-start sm:justify-center md:justify-start flex-auto min-w-0 bg-white">
     <div className="bg-image sm:w-1/2 xl:w-2/5 h-full hidden md:flex flex-auto items-center justify-start p-10 overflow-hidden bg-purple-900 text-white bg-no-repeat bg-cover relative" >
