@@ -1,19 +1,14 @@
 import React from "react";
-import Link from "next/link";
-import Navbar from "./components/Navbar";
-import MainHeader from "./components/Header";
-import Shop_component from "./components/Shop_component";
-import Item_section from "./components/Item_section";
-import Footer from "./components/Footer";
-import Shoes_section from "./components/Shoes_section";
-import Card_Item from "./components/Card_Item";
+import Navbar from "../components/Navbar";
+import Shop_component from "../components/Shop_component";
+import Item_section from "../components/Item_section";
+import Footer from "../components/Footer";
+import Shoes_section from "../components/Shoes_section";
+import Card_Item from "../components/Card_Item";
 
 function Dashboard() {
   return (
     <div>
-      <div>
-        <MainHeader />
-      </div>
       <div>
         <Navbar />
       </div>

@@ -1,9 +1,8 @@
 import React from 'react'
 import { AiOutlineShoppingCart, AiOutlineMenu } from 'react-icons/ai'
 import { VscHeart } from 'react-icons/vsc'
-import Footer from './components/Footer'
-import MainHeader from './components/Header'
-import Navbar from './components/Navbar'
+import Footer from '../components/Footer'
+import Navbar from '../components/Navbar'
 import { BsGrid3X3Gap } from 'react-icons/bs'
 
 import Link from 'next/dist/client/link'
@@ -13,12 +12,11 @@ import BigSheos from './BigSheos'
 function SingleItem() {
     return (
         <div>
-            <MainHeader />
             <Navbar />
             <div className="flex justify-center text-lg my-4">
                 <a href="#" className="text-sky-400 hover:text-blue-800">Home</a>
                 <span className="text-gray-500 mx-2">/</span>
-                <Link href="/hot-deal"><a href="#" className=" hover:text-blue-800">Hot Deal</a></Link>
+                <Link href="#"><a href="#" className=" hover:text-blue-800">Hot Deal</a></Link>
 
             </div>
             <div className='flex justify-center main_container gap-10 mt-5'>

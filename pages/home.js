@@ -1,22 +1,20 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Link from 'next/dist/client/link'
 import { AiOutlineMenu } from 'react-icons/ai'
 import { BsGrid3X3Gap } from 'react-icons/bs'
-import MainHeader from './components/Header'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
-import Products from './Products'
-import LeftSidebar from './LeftSidebar'
-import BigSheos from './BigSheos'
+import LeftSidebar from './container/LeftSidebar'
+import BigSheos from './container/BigSheos'
+import Products from './container/Products'
 function HomePage() {
     return (
         <>
-            <MainHeader />
             <Navbar />
             <div className="flex justify-center text-lg mb-4 bg-gray-100 py-4">
-                <a href="#" className="text-sky-400 hover:text-sky-400">Home</a>
+                <a href="/" className="text-sky-400 hover:text-sky-400">Home</a>
                 <span className="text-gray-500 mx-2">/</span>
-                <a href="/hot-deal" className=" hover:text-sky-400">Hot Deal</a>
+                <a href="#" className=" hover:text-sky-400">Hot Deal</a>
             </div>
             <div className='flex justify-center main_container gap-10 mt-5'>
                 <div className='left_container '>

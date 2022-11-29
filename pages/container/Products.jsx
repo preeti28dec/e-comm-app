@@ -1,31 +1,21 @@
 import React, { useEffect, useState } from 'react'
 import { AiOutlineShoppingCart } from 'react-icons/ai'
 import { VscHeart } from 'react-icons/vsc'
-
 import Link from 'next/dist/client/link'
-
+import { getProductApi } from '../network/api'
 
 function Products() {
     const [data, setData] = useState([])
     const [loding, setLoding] = useState(true)
-
     useEffect(() => {
-        async function GetData() {
-            try {
-                const response = await fetch("https://fakestoreapi.com/products");
-                const data = await response.json();
-                setData(data)
-                setLoding(false)
-            }
-            catch (err) {
-                // console.log(err);
-            }
-        }
+        const GetData = async () => {
+          const res = await getProductApi();
+          setData(res)
+          setLoding(false)
+        };
         GetData();
-    }, [])
-
-
-
+      }, []);
+    
 
     return (
         <div>
@@ -47,7 +37,7 @@ function Products() {
 
                                         <div className='container2'>
                                             <div className="w-full min-h-80 bg-gray-200 aspect-w-1 aspect-h-1 rounded-md overflow-hidden group-hover:opacity-75 lg:h-80 lg:aspect-none All_card clip-path  image">
-                                                <img msrc={product.image} alt={product.imageAlt} className="w-full h-full object-cente lg:w-full lg:h-full object-contain bg-white"/>
+                                                <img src={product.image} alt={product.imageAlt} className="w-full h-full object-cente lg:w-full lg:h-full object-contain bg-white"/>
                                                 <div className='flex gap-3 middle'>
                                                     <VscHeart className='text' />
                                                     <AiOutlineShoppingCart className='text' />
@@ -85,8 +75,12 @@ function Products() {
 
             </div>
         </div>
-
     )
 }
 
 export default Products
+
+
+
+
+

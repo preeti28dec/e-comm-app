@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Dashboard from "./Dashboard";
+import Dashboard from "./container/Dashboard";
 import Login from "./login";
 export default function Home() {
   const [user, setUser] = useState("");

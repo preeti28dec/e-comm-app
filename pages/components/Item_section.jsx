@@ -1,8 +1,5 @@
 import React, { useState } from 'react'
-import Products from '../Products';
-
-
-
+import Products from '../container/Products';
 
 function Item_section() {
     const [dataCount, setDataCount] = useState(4);
