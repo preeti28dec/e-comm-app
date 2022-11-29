@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import Navbar from "../components/Navbar";
-import { getProductApiId } from "../network/api";
 import Link from "next/link";
+import { getProductApiId } from "../../network/api";
 
 export default function ProductDetail() {
   const [data, setData] = useState();
