@@ -91,12 +91,14 @@ function Navbar() {
           </svg>
               </div>
 
-              <a href="/shopping-cart" className="flex h-10 items-center px-2 rounded-lg border border-gray-200 hover:border-gray-300 focus:outline-none hover:shadow-inner">
+              <Link href="/shopping-cart" className="flex h-10 items-center px-2 rounded-lg border border-gray-200 hover:border-gray-300 focus:outline-none hover:shadow-inner">
+              <a>
                 <svg className="h-6 w-6 leading-none text-gray-300 stroke-current" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path  d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
                 </svg>
                 <span className="pl-1 text-gray-500 text-md">0</span>
-              </a>
+                </a>
+              </Link>
               
               <button type="button" className="hidden md:block w-10 h-10 rounded-lg bg-gray-100 border border-gray-200 flex justify-center items-center">
                 <img src="https://avatars.dicebear.com/api/bottts/2.svg" alt="bottts" width="28" height="28" className="rounded-lg mx-auto"/>
