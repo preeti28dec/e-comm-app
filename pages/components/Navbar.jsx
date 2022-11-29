@@ -26,9 +26,9 @@ function Navbar() {
         </div>
           </a>
 
-          <div className="hidden md:flex space-x-3 flex-1 lg:ml-8">
-          <Link href="/home" className="dropdown px-2 py-2 hover:bg-gray-100 rounded-lg text-gray-400 hover:text-gray-600">
-          <a>
+          <div className="hidden md:flex  space-x-3 flex-1 lg:ml-8">
+          <Link href="/home" >
+          <a className="dropdown px-2 py-2 hover:bg-gray-100 rounded-lg text-gray-400 hover:text-gray-600">
             HOME
             <div className="dropdown-content">
                     <div className='main_table mb-4'>
@@ -91,8 +91,8 @@ function Navbar() {
           </svg>
               </div>
 
-              <Link href="/shopping-cart" className="flex h-10 items-center px-2 rounded-lg border border-gray-200 hover:border-gray-300 focus:outline-none hover:shadow-inner">
-              <a>
+              <Link href="/shopping-cart" >
+              <a className="flex h-10 items-center px-2 rounded-lg border border-gray-200 hover:border-gray-300 focus:outline-none hover:shadow-inner">
                 <svg className="h-6 w-6 leading-none text-gray-300 stroke-current" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path  d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
                 </svg>
