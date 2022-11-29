@@ -144,11 +144,11 @@ export default function ProductDetail() {
                   <span className="title-font font-medium text-2xl text-gray-900">
                     ${data?.price}
                   </span>
-                  <Link href="/shopping-cart" ><a>
                   <button className="flex ml-auto text-whiteborder-0 py-2 px-6 focus:outline-none bg-indigo-600 hover:bg-indigo-500 rounded text-white">
+                  <Link href="/shopping-cart" ><a>
                     Add to Cart
-                  </button>
                   </a></Link>
+                  </button>
                   <button className="rounded-full w-10 h-10 bg-gray-200 p-0 border-0 inline-flex items-center justify-center text-gray-500 ml-4">
                     <svg
                       fill="currentColor"
