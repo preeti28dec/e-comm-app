@@ -111,16 +111,13 @@ function Card_Item() {
                         </div>
                     </div>
                 </div>
-                {/* <div className=' search_bar flex flex-wrap justify-center '>
+                <div className=' search_bar flex flex-wrap justify-center '>
                     <div className="border border-sky-400">
                         <input type="input" className="input_section px-4 py-3 text-base font-normal text-gray-700 bg-white w-full" placeholder="Search query..." />
                         <button type="button" className=" relative right-0 border-gray-300 px-6 py-3 bg-sky-400 search_button ">Search</button>
                     </div>
-                </div> */}
-                <div className='border border-sky-400 flex items-center sm:mx-20 my-4'>
-                    <input type="text" className='w-full' placeholder='Search query...'/>
-                    <button className='bg-sky-400  py-4 px-8'>Search</button>
                 </div>
+              
 
             </div>
 

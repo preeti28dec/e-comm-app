@@ -40,7 +40,9 @@ function Products() {
                                                 <img src={product.image} alt={product.imageAlt} className="w-full h-full object-cente lg:w-full lg:h-full object-contain bg-white"/>
                                                 <div className='flex gap-3 middle'>
                                                     <VscHeart className='text' />
+                                                    <Link href="/shopping-cart" ><a>
                                                     <AiOutlineShoppingCart className='text' />
+                                                    </a></Link>
                                                 </div>
                                             </div>
                                         </div>
