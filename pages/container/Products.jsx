@@ -2,14 +2,14 @@ import React, { useEffect, useState } from 'react'
 import { AiOutlineShoppingCart } from 'react-icons/ai'
 import { VscHeart } from 'react-icons/vsc'
 import Link from 'next/dist/client/link'
-import { getProductApiId } from '../../network/api'
+import { getProductApi } from '../../network/api'
 
 function Products() {
     const [data, setData] = useState([])
     const [loding, setLoding] = useState(true)
     useEffect(() => {
         const GetData = async () => {
-          const res = await getProductApiId();
+          const res = await getProductApi();
           setData(res)
           setLoding(false)
         };
