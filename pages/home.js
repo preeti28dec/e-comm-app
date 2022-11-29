@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react'
-import Link from 'next/dist/client/link'
 import { AiOutlineMenu } from 'react-icons/ai'
 import { BsGrid3X3Gap } from 'react-icons/bs'
 import Navbar from './components/Navbar'
@@ -7,12 +6,13 @@ import Footer from './components/Footer'
 import LeftSidebar from './container/LeftSidebar'
 import BigSheos from './container/BigSheos'
 import Products from './container/Products'
+import Link from 'next/link'
 function HomePage() {
     return (
         <>
             <Navbar />
             <div className="flex justify-center text-lg mb-4 bg-gray-100 py-4">
-                <a href="/" className="text-sky-400 hover:text-sky-400">Home</a>
+                <Link href="/" className="text-sky-400 hover:text-sky-400"><a>Home</a></Link>
                 <span className="text-gray-500 mx-2">/</span>
                 <a href="#" className=" hover:text-sky-400">Hot Deal</a>
             </div>

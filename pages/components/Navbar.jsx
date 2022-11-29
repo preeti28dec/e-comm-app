@@ -1,6 +1,7 @@
 import React from 'react'
 import { useRouter } from "next/router";
 import { AiOutlineLogout } from 'react-icons/ai';
+import Link from 'next/link';
 function Navbar() {
   const router = useRouter();
   function Logout(){
@@ -26,7 +27,8 @@ function Navbar() {
           </a>
 
           <div className="hidden md:flex space-x-3 flex-1 lg:ml-8">
-          <a href="/home" className="dropdown px-2 py-2 hover:bg-gray-100 rounded-lg text-gray-400 hover:text-gray-600">
+          <Link href="/home" className="dropdown px-2 py-2 hover:bg-gray-100 rounded-lg text-gray-400 hover:text-gray-600">
+          <a>
             HOME
             <div className="dropdown-content">
                     <div className='main_table mb-4'>
@@ -73,7 +75,8 @@ function Navbar() {
 
                     </div>
                   </div>
-            </a>
+                  </a>
+            </Link>
             <a href="#" className="px-2 py-2 hover:bg-gray-100 rounded-lg text-gray-400 hover:text-gray-600">BAG</a>
             <a href="#" className="px-2 py-2 hover:bg-gray-100 rounded-lg text-gray-400 hover:text-gray-600">BELT</a>
             <a href="#" className="px-2 py-2 hover:bg-gray-100 rounded-lg text-gray-400 hover:text-gray-600">SNEAKERS</a>
