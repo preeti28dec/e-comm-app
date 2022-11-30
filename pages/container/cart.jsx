@@ -20,8 +20,8 @@ export default function AddCart(props) {
                 <input className="mx-2 border text-center w-8" type="" value={inputvalue} placeholder='1' onChange={(e)=>setInputValue(e.target.value)}/>
                 <AiOutlinePlus className="fill-current text-gray-600 w-5" onClick={()=>setInputValue(inputvalue+1)}/>
               </div>
-              <span className="text-center w-1/5 font-semibold text-sm">${props.value.price}</span>
-              <span className="text-center w-1/5 font-semibold text-sm">${props.value.price*inputvalue}</span>
+              <span className="text-center w-1/5 font-semibold text-sm">${props?.value?.price}</span>
+              <span className="text-center w-1/5 font-semibold text-sm">${props?.value?.price*inputvalue}</span>
             </div>
 
   )
