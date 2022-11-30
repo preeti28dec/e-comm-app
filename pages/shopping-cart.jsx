@@ -1,40 +1,48 @@
-import React from 'react'
+import Link from 'next/link';
+import React, { useContext } from 'react'
 import { AiOutlineArrowLeft } from 'react-icons/ai'
+import Navbar from './components/Navbar';
 import AddCart from './container/cart'
-const Data =[{id:1,price:200},{id:2,price:300},{id:3,price:400},{id:4,price:500}]
+import { CartContext } from './container/context';
 
 export default function ShoppingCart() {
-  const totalAmout= Data.reduce((totalCost, { price: price }) => totalCost + (price), 0);
+  const {cart}=useContext(CartContext)
+  const totalAmout= cart.reduce((totalCost, { price: price }) => totalCost + (price), 0);
+
   return (
+    <>
+    <Navbar/>
     <div className="bg-gray-100">
       <div className="container mx-auto mt-10">
-        <div className="flex shadow-md my-10">
-          <div className="w-3/4 bg-white px-10 py-10">
+        <div className="sm:flex shadow-md my-10">
+          <div className="sm:w-3/4 bg-white px-10 py-10">
             <div className="flex justify-between border-b pb-8">
               <h1 className="font-semibold text-2xl">Shopping Cart</h1>
-              <h2 className="font-semibold text-2xl">{Data.length} Items</h2>
+              <h2 className="font-semibold text-2xl">{cart.length} Items</h2>
             </div>
-            <div className="flex mt-10 mb-5">
+            <div className="flex  mt-10 mb-5">
               <h3 className="font-semibold text-gray-600 text-xs uppercase w-2/5">Product Details</h3>
-              <h3 className="font-semibold  text-gray-600 text-xs uppercase w-1/5 text-center">Quantity</h3>
+              <h3 className="font-semibold  text-gray-600 text-xs uppercase sm:w-1/5 text-center">Quantity</h3>
               <h3 className="font-semibold  text-gray-600 text-xs uppercase w-1/5 text-center">Price</h3>
               <h3 className="font-semibold text-gray-600 text-xs uppercase w-1/5 text-center">Total</h3>
             </div>
-            {Data.map((i,ind)=>{
+            {cart.map((i,ind)=>{
               return (<div key={ind} >
                   <AddCart value={i}/>
             </div>)
             })}
-            <a href="#" className="flex items-center font-semibold text-indigo-600 text-sm mt-10">
+            <Link href="/">
+            <a  className="flex items-center font-semibold text-indigo-600 text-sm mt-10">
             <AiOutlineArrowLeft className="fill-current mr-2 text-indigo-600 text-xl"/>
                Continue Shopping
             </a>
+            </Link>
           </div>
 
-          <div id="summary" className=" bg-[#f6f6f6] w-1/4 px-8 py-10">
+          <div id="summary" className=" bg-[#f6f6f6] sm:w-1/4 px-8 py-10">
             <h1 className="font-semibold text-2xl border-b pb-8">Order Summary</h1>
             <div className="flex justify-between mt-10 mb-5">
-              <span className="font-semibold text-sm uppercase">Items {Data.length}</span>
+              <span className="font-semibold text-sm uppercase">Items {cart.length}</span>
               <span className="font-semibold text-sm">{totalAmout}$</span>
             </div>
             <div>
@@ -60,6 +68,7 @@ export default function ShoppingCart() {
         </div>
       </div>
     </div>
+    </>
   )
 }
 

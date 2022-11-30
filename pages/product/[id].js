@@ -1,11 +1,13 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import Navbar from "../components/Navbar";
 import Link from "next/link";
 import { getProductApiId } from "../../network/api";
+import CartProvider, { CartContext } from "../container/context";
 
 export default function ProductDetail() {
   const [data, setData] = useState();
+  const {cart,setCart}=useContext(CartContext)
   const router = useRouter();
   const id = router.query;
   useEffect(() => {
@@ -15,8 +17,8 @@ export default function ProductDetail() {
     };
     GetData();
   }, [id]);
-  console.log(data, "data");
   return (
+    <CartProvider>
     <div>
       <Navbar />
       <div className="py-6">
@@ -144,7 +146,7 @@ export default function ProductDetail() {
                   <span className="title-font font-medium text-2xl text-gray-900">
                     ${data?.price}
                   </span>
-                  <button className="flex ml-auto text-whiteborder-0 py-2 px-6 focus:outline-none bg-indigo-600 hover:bg-indigo-500 rounded text-white">
+                  <button onClick ={() => {setCart((i)=> {return [...i,data]}) }} className="flex ml-auto text-whiteborder-0 py-2 px-6 focus:outline-none bg-indigo-600 hover:bg-indigo-500 rounded text-white">
                   <Link href="/shopping-cart" ><a>
                     Add to Cart
                   </a></Link>
@@ -165,5 +167,6 @@ export default function ProductDetail() {
         </section>
       </div>
     </div>
+    </CartProvider>
   );
 }
