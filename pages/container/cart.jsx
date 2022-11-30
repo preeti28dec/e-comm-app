@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import {AiOutlineMinus, AiOutlinePlus } from 'react-icons/ai'
-function Cart(props) {
+export default function AddCart(props) {
     const [inputvalue,setInputValue]=useState(1)
 
   return (
@@ -27,4 +27,3 @@ function Cart(props) {
   )
 }
 
-export default Cart

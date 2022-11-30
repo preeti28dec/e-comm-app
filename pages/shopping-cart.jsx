@@ -1,9 +1,9 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { AiOutlineArrowLeft } from 'react-icons/ai'
-import Cart from './container/cart'
+import AddCart from './container/cart'
 const Data =[{id:1,price:200},{id:2,price:300},{id:3,price:400},{id:4,price:500}]
 
-function ShoppingCart() {
+export default function ShoppingCart() {
   const totalAmout= Data.reduce((totalCost, { price: price }) => totalCost + (price), 0);
   return (
     <div className="bg-gray-100">
@@ -22,7 +22,7 @@ function ShoppingCart() {
             </div>
             {Data.map((i,ind)=>{
               return (<div key={ind} >
-                  <Cart value={i}/>
+                  <AddCart value={i}/>
             </div>)
             })}
             <a href="#" className="flex items-center font-semibold text-indigo-600 text-sm mt-10">
@@ -62,8 +62,6 @@ function ShoppingCart() {
     </div>
   )
 }
-
-export default ShoppingCart
 
 
 
