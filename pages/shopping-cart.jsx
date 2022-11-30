@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import { AiOutlineArrowLeft } from 'react-icons/ai'
-import Cart from './components/shopping_cart/cart'
-
+import Cart from './components/cart'
 const Data =[{id:1,price:200},{id:2,price:300},{id:3,price:400},{id:4,price:500}]
 
 function ShoppingCart() {
