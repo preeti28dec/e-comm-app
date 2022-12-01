@@ -3,8 +3,8 @@ import React from 'react'
 function Footer() {
     return (
         <>
-            <div className='bg-blue-300 px-8 py-12'>
-                <div className='footer_first_row '>
+            <div className='bg-blue-300 px-2 sm:px-8 py-12'>
+                <div className='flex flex-wrap text-start px-2 sm:m-8 sm:justify-around'>
                     <div className=''>
                         <div className='items-center flex my-4'>
                             <div> <svg className="fill-current h-8 w-8 mr-2" width="54" height="54" viewBox="0 0 54 54" xmlns="http:www.w3.org/2000/svg"><path d="M13.5 22.1c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05zM0 38.3c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05z" /></svg></div>
@@ -23,7 +23,7 @@ function Footer() {
                     </div>
                 </div>
 
-                <div className='flex-wrap flex justify-around py-10 px-16'>
+                <div className='flex-wrap flex justify-around py-10 sm:px-16'>
                     <div className=''>
                         <div className='items-center footer_second_section mb-10 '>Information</div>
                         <div className='footer_second_section_last_text'><ul>

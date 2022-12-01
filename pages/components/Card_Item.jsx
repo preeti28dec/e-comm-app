@@ -23,7 +23,7 @@ function Card_Item() {
 
             <div className='card_item_latest_main_div'>
                 <div className='my-14  text-center card_item_latest_text'>LATEST NEWS</div>
-                <div className='flex-wrap flex justify-around'>
+                <div className='flex-wrap flex justify-around gap-4'>
                     <div className='flex'>
                         <div className='self-center mx-5'><img src='./Nike_logo.png' alt='loding' /></div>
                         <div>
@@ -109,12 +109,6 @@ function Card_Item() {
 
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div className=' search_bar flex flex-wrap justify-center '>
-                    <div className="border border-sky-400">
-                        <input type="input" className="input_section px-4 py-3 text-base font-normal text-gray-700 bg-white w-full" placeholder="Search query..." />
-                        <button type="button" className=" relative right-0 border-gray-300 px-6 py-3 bg-sky-400 search_button ">Search</button>
                     </div>
                 </div>
               
